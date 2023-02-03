@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Desafio</title>
+    <style>
+        p#exp{
+            text-align: justify;
+            font: italic 12px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    <p id="exp">Utilizar o ex006 como exemplo e criar um site que solicite ao usuario o país que nasceu e informe se é Brasileiro ou Estrangeiro</p>
+
+    Digite seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" id="ver" onclick="verificar()">
+    <div id="res"></div>
+    
+    <script>
+        function verificar(){
+            var pais = document.querySelector('input#pais')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `Seu país de origem é ${pais.value}!`
+            if(pais.value == 'Brasil'){
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>.</p>`
+            }else{
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
