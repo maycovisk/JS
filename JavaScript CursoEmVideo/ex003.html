@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +7,14 @@
     <title>Eventos DOM</title>
     <style>
         div#area{
-            font: normal 18px arial;
             background-color: green;
             color: white;
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="area" >
-        Leave me alone...
+    <div id="area">
+        Interaja...
     </div>
-
-    <script>
-        var a = document.getElementById('area')
-
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', enter)
-        a.addEventListener('mouseout',sair)
-
-        function clicar(){
-            a.innerText = 'Aff! Clicou'
-            a.style.background = 'blue'
-        }
-        function enter(){
-            a.innerText = 'Tira essa seta dai'
-            a.style.background = 'red'
-        }
-        function sair(){
-            a.innerText = 'Leave me alone...'
-            a.style.background = 'green'
-        }
-    </script>
 </body>
 </html>
