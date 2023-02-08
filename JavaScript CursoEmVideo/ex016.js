@@ -12,3 +12,9 @@ console.log(`Nosso vetor agora é o ${num}`)
 for(let pos = 0; pos < num.length ; pos++){
     console.log(num[pos])
 }
+
+for(let pos in num){
+    console.log(num[pos])
+}
+
+console.log(`O valor 2 está na posição ${num.indexOf(2)}`)
